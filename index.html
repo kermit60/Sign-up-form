@@ -20,25 +20,36 @@
             <h1>Getting Started</h1>
             <form action="">
                 <fieldset class="form">
-                    <div class="input-container">
-                        <label for="fname">FIRST NAME</label>
-                        <input type="text" name="fname" id="fname" placeholder="Bob" required>       
-                        <label for="lname">LAST NAME</label>
-                        <input type="text" name="lname" id="lname" placeholder="Bob" required>
+                    <div class="inner-sections">
+                        <div class="input-container">
+                            <label for="fname">FIRST NAME</label>
+                            <input type="text" name="fname" id="fname" placeholder="Bob" required>       
+                        </div>
+                        <div class="input-container">
+                            <label for="lname">LAST NAME</label>
+                            <input type="text" name="lname" id="lname" placeholder="Bob" required>
+                        </div>
                     </div>
-                    <div class="input-container">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" placeholder="Bob124@gmail.com" required>
-                        <label for="name">PHONE</label>
-                        <input type="text" name="name" id="name" placeholder="Bob">
+                    <div class="inner-sections">
+                        <div class="input-container">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" placeholder="Bob124@gmail.com" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="phone">PHONE</label>
+                            <input type="text" name="phone" id="phone" placeholder="111-111-1111">
+                        </div>
                     </div>
-                    <div class="input-container">
-                        <label for="password">PASSWORD </label>
-                        <input type="password" name="name" id="password" required>
-                        <label for="confirm_pass">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm_pass" id="confirm_pass" required>
+                    <div class="inner-sections">
+                        <div class="input-container">
+                            <label for="password">PASSWORD </label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="confirm_pass">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm_pass" id="confirm_pass" required>
+                        </div>
                     </div>
-                    
                 </fieldset>
             </form>
             <button type="submit">Create Account</button>
