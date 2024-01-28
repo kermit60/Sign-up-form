@@ -18,16 +18,25 @@ a {
     text-decoration: none;
 }
 
+
+
 .info {
     background-color: red;
     height: 100%;
     width: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     padding-top: 3vh;
 }
 
 .info > a {
     font-size: 20px;
+}
+
+.info > img {
+    margin-top: 7vh
 }
 
 .info > h1 {
@@ -50,7 +59,7 @@ a {
     justify-content: center;
     background-color: rgb(22, 33, 50);
     height: 100%;
-    width: 60%;
+    width: 100%;
     padding: 15vh 6vw;
     color: gray;
     
@@ -58,7 +67,6 @@ a {
 
 form {
     margin-top: 6vh;
-    ;
 }
 
 .form {
@@ -78,17 +86,23 @@ form {
 
 .input-container > input {
     min-height: 4vh;
-    
-}
-
-input {
+    width: clamp(175px, 50%, 200px);
     border-radius: 5px;
     border: none;
-    width: 75%;
+    color: gray;
+    padding-left: 5px;
+}
+
+input:focus {
+    border: 2px solid blue;
 }
 
 input:valid {
-    color: gray
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
 }
 
 .inner-sections {
@@ -101,6 +115,7 @@ input:valid {
     border: none;
     border-radius: 5px;
     min-height: 5vh;
+    width: clamp(100px, 50%, 150px);
     margin-bottom: 2vh;
     cursor: pointer;
 }
@@ -108,3 +123,4 @@ input:valid {
 div > a {
     color: red;
 }
+
