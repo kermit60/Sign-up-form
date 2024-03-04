@@ -10,15 +10,15 @@
 
 /* graphical left hand section */
 
-h1 {
+.info > h1 {
     font-size: 40px;
+    /* background-color: black;
+    opacity: 50%; */
 }
 
 a {
     text-decoration: none;
 }
-
-
 
 .info {
     background-color: red;
@@ -109,7 +109,7 @@ input:invalid {
     display: flex;
 }
 
-.form-container > button {
+.submit-btn {
     width: 15%;
     background-color: red;
     border: none;
